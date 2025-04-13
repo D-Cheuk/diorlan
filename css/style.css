@@ -1,0 +1,382 @@
+@media (max-width: 768px) {
+  .container, 
+  .team-container, 
+  section, 
+  form {
+    width: 100%;
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    text-align: justify;
+  }
+
+  img:not(.logo) {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  input, select, button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .nav-destaque {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .header-text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .team-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  section {
+    font-size: 0.95rem;
+  }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth      
+  }
+body
+  {
+    font-family: Arial;
+    line-height: 1.6;
+    margin: auto;
+    padding: auto;
+    color: #ffffff;    
+    background-image: radial-gradient(circle, #525151 50%, #000000 100%);
+    backdrop-filter:float(500px);
+    max-width: 100%;
+  }
+audio
+  {
+    padding: center;
+    margin: auto;
+    display: flex;  
+    position: sticky;
+    
+  }
+title 
+  {
+    background-color: #000000;
+  }
+
+strong 
+  { /*Personalização do negrito*/
+    color: #03ff25;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 38px;
+    font-style: bold;
+    font-family: Franklin Gothic Medium;
+    stroke: #f30505;
+  }
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+    
+}
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-size: cover;
+    border: 2px solid #ffffff;
+    color: #000000;
+    padding: 10px;
+    text-align:center;
+    border-radius: 5px;
+    background-image: radial-gradient(circle, #525151 50%, #000000 100%);
+    
+}
+.intro {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1,5rem;
+    /* flex-wrap:flex;
+    margin-bottom: 10px;
+    border-radius: 10px;   
+    size-adjust: flex; */
+    
+     
+}
+
+.intro-text {
+    flex: 1;
+    min-width: auto;
+    align-content: baseline;
+    text-align: justify;
+    text-justify: inter-word; /* Melhora a distribuição do espaçamento */
+}/* Estilo base para todos os botões */
+.nav-destaque {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #121313;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+    
+  .btn-d1 {
+    background-color: #f8f9fa;
+    border: 2px solid #000000;
+  }
+  .btn-d1:hover {
+    background: radial-gradient(circle,#c300ff 0%, #000000 100%);
+    color: white;
+    transform: translateY(-3px);
+    border: 2px solid #ffffff;
+  }
+
+  /* Botão Produtos - Efeito de escala */
+  .btn-d2 {
+    background-color: #f8f9fa;
+    border: 2px solid #3e0350;
+  }
+  .btn-d2:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: translateY(-3px);
+  }
+  
+  /* Botão Quem Somos - Efeito de sublinhado */
+  .btn-2 {
+    padding-bottom: 5px;
+  }
+  
+  .btn-destaque::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e74c3c;
+    transition: width 0.3s ease;
+  }
+  
+  .sobre-btn:hover::after {
+    width: 100%;
+  }
+  
+  .sobre-btn:hover {
+    color: #e74c3c;
+  }
+  
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    }
+  
+  .team-list {
+    background-color: #170029;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: center;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .team-list:hover {
+    transform: translateY(-5px);
+  }
+  
+  .team-list img {
+    width: 150px;
+    height: 150px;
+    object-fit: grid;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    border: 3px solid #fff;
+  }
+  
+  .team-list h2, 
+  .team-list h3 {
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  .team-list h2 {
+    font-size: 1.8rem;
+  }
+  
+  .team-list h3 {
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+ 
+  .local-btn {
+    background-color: #9b59b6;
+    color: white;
+    box-shadow: 0 0 0 rgba(155, 89, 182, 0.7);
+  }
+  
+  /* .local-btn:hover {
+    animation: pulse 1s infinite;
+  } */
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(155, 89, 182, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(155, 89, 182, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(155, 89, 182, 0);
+    }
+  }
+  
+  /* Estilo para o container do menu */
+  .menu-principal {
+    text-align: center;
+    padding: 15px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+  }
+
+section{
+  padding: 50px;
+  margin: 30px;
+  border-bottom: 2mm ridge rgba(255, 255, 255, 0.6);
+  font-family: Lucida Sans;
+  text-align: center;
+  background-color: #0c0c0c;
+  background-size:cover;  
+  box-sizing:content-box;
+  align-content: center;
+  border-style:outset;
+  border-color: #9b59b6;
+
+}
+section:hover{
+  box-shadow: 0 8px 8px rgba(3, 210, 247, 0.2); /* Adiciona sombra no hover */
+  lighting-color: #03ff25;
+  filter: brightness(1.00); /* Leve aumento de brilho */
+
+}
+ul {
+    list-style:disc;
+    padding: 15px;
+    text-align: justify;
+}
+.team-member, .product {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #06b8ff;
+    border-radius: 5px;
+}
+
+/* Imagens em geral */
+img:not(.logo) {
+    max-width: 35%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin: left;
+}
+/* Estilo específico para logos */
+.logo {
+    width: 150px;
+    height: auto;    
+    border-radius: 10px;           
+    transition: transform ease-in-out 0.3s;
+    image-rendering:optimizeQuality;              
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.logo:hover {
+    transform: scale(1.5);
+    opacity: 0.9;
+    box-shadow: #03ff25;
+    transition: 0,35s ease-in-out;
+    box-shadow: 0 5px 5px rgba(2, 225, 255, 0.2);
+    /* filter: brightness(1.00); Leve aumento de brilho */
+    filter:drop-shadow(0 0 10px rgba(2, 238, 255, 0.5));   
+}
+
+.logo-stroke{
+  stroke: #06b8ff;
+}
+
+.header-container {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #000000;    
+}
+
+.header-text {
+    font-weight: bold;    
+    font-family: consolas;
+    font-size: 8mm;  
+    display: flex;
+    margin: auto;
+    display: flex;  
+    position: sticky;
+    justify-content: center;
+}
+form {
+    display:block;
+    gap: 20px;
+    max-width: auto;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #00ff37;
+    border-radius: 5px;
+    place-items: left;
+    font-size: 1.5rem;    
+    
+}
+
+input, select, button{
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border-color: #00ff37;
+    padding: center;
+    margin: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+    justify-content: center;
+    display: justify;  
+    
+}
