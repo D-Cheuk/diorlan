@@ -3,21 +3,21 @@
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>PC Building Doctors</title>
+      <title>PC Building Doctor</title>
       <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
       <header id="inicio" class="header-container">
         <img class="logo" src="img/loja-logo.png" alt="Logo da Clínica">
         <div class="header-text">PC Building Doctors desde 1989 revivendo a sua paixão tecnologica.</div>
-        <audio id="music" src="./music/eletro.mp3" type="audio/mp3" controls autoplay loop unmuted>
+        <audio id="music" src="/music/eletro.mp3" type="audio/mp3" controls autoplay loop unmuted>
           <script>
             document.addEventListener('click', () => {
               const audio = document.getElementById('music');
-              audio.muted = false;    
-              audio.volume = 0.1;      
-              audio.play();            
-            }, { once: true }); 
+              audio.muted = false;     // Desativa o mute
+              audio.volume = 0.1;      // Define o volume para 40%
+              audio.play();            // Garante que comece a tocar
+            }, { once: true }); // Executa só na primeira interação
           </script>
         </audio>
       </header>
@@ -33,10 +33,10 @@
         <div class="container">
           <section class="intro">
             <div class="intro-text">
-              <h1> Bem-vindo à  <p><strong>PC s</strong>
+              <h1> Bem-vindo à  <p><strong>PC Building Doctor</strong>
                 <p>A Clínica do Seu PC!</h1></p> 
                 <br></br>
-                Na  PC s, tratamos computadores como verdadeiras máquinas de precisão. Somos especialistas na montagem, configuração e manutenção de PCs personalizados para todas as necessidades — desde gamers exigentes até profissionais que precisam de alto desempenho no dia a dia.
+                Na  PC Building Doctor, tratamos computadores como verdadeiras máquinas de precisão. Somos especialistas na montagem, configuração e manutenção de PCs personalizados para todas as necessidades — desde gamers exigentes até profissionais que precisam de alto desempenho no dia a dia.
                 
                 <p>Aqui, cada máquina é montada com cuidado, qualidade e atenção aos mínimos detalhes. Se você busca performance, estabilidade e um visual impecável, está no lugar certo.</p>
                 
@@ -49,7 +49,7 @@
         <section class="intro-text">
           <h1>Nossos Serviços</h1>
           <div class="product intro">
-            <img src="./img/Peaces.png" alt="Consultas médicas">
+            <img src="img/peaces.png" alt="Consultas médicas">
                 <h2><strong>Montagem</strong></h2>
                 <br>
                 <p>
@@ -170,13 +170,13 @@
       
         <div class="team-container">
             <a href="https://www.amd.com/pt.html" target="_blank">
-              <img class="logo team-list" src="./img/amd-logo.svg" alt="Técnico de Software">
+              <img class="logo team-list" src="/img/amd-logo.svg" alt="Técnico de Software">
             </a>
             <a  href="https://www.intel.com.br/content/www/br/pt/homepage.html" target="_blank">
-              <img class="logo team-list" src="./img/intel-logo.svg" alt="Técnico de Software">
+              <img class="logo team-list" src="/img/intel-logo.svg" alt="Técnico de Software">
             </a>
             <a href="https://www.nvidia.com/pt-br/" target="_blank">
-              <img class="logo team-list" src="img/nvidia-logo.png" alt="Técnico de Software">
+              <img class="logo team-list" src="/img/nvidia-logo.png" alt="Técnico de Software">
             </a>
           </div>        
     </section>
